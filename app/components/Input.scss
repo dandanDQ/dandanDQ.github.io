@@ -1,0 +1,25 @@
+.input-component {
+    width: 100%;
+    background-color: rgba(149, 149, 149, 0.5);
+    backdrop-filter: blur(1vw);
+    border-radius: 12vw;
+    display: flex;
+    padding: 2vw 4vw;
+    .input {
+        height: 12vw;
+        flex: 1 1 0;
+        background: transparent;
+        outline:  none;
+        color: #fff;
+        font-size: 3.2vw;
+        &::placeholder {
+            color: #fff;
+            font-size: 3.2vw;
+        }
+    }
+    .img {
+        flex: 0 0 1;
+        margin-right: 2vw;
+    }
+
+}
