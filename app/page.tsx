@@ -1,4 +1,7 @@
-import './home.css';
+import './home.scss';
+import Navbar from './components/NavBar';
+import Input from './components/Input'
+import Header from './components/Header'
 
 function RelevantCard({
   title = '国风精致温馨房',
@@ -48,20 +51,8 @@ function DiscoveryCard() {
 export default function Home() {
   return (
     <div className="home-container">
-      <div className="header">
-        <div className="top-nav">
-          <div className="location">
-            <span className="icon">→</span>
-            嘟嘟一号营地
-          </div>
-          <div className="avatar">头像</div>
-        </div>
-        <div className="slogan">幸会！告诉我你想去哪玩</div>
-        <div className="search-bar">
-          <span>🔍 </span>
-          <input type="text" placeholder="嘟嘟二号营地" />
-        </div>
-      </div>
+      <Header />
+
       <div className="body-container">
         <div className="relevant-container">
           <h3>相关推荐</h3>
@@ -82,6 +73,10 @@ export default function Home() {
           </div>
         </div>
         {/* <div className="navbar">navbar</div> */}
+      </div>
+
+      <div className='nav-bar'>
+        <Navbar></Navbar>
       </div>
     </div>
   );

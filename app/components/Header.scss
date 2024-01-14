@@ -1,0 +1,40 @@
+.header {
+    width: 100vw;
+    // background-color: #000;
+    color: #fff;
+    border-radius: 8vw; 
+    height: 50vw;
+    padding: 4vw;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        display: block;
+        background-image: url('/background/bg_dark.jpg');
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.5);
+    }
+
+    .top-nav {
+        margin-top: 5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .slogan {
+      font-size: 4.8vw;
+      margin-top: 6vw;
+      color: #fff;
+    }
+
+   .input-area  {
+        margin-top: 4vw;
+    }
+  }
