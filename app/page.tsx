@@ -1,4 +1,4 @@
-import './home.scss';
+import './page.scss';
 import Navbar from './components/NavBar';
 import Header from './components/Header';
 import RelevantCard from './components/RelevantCard';

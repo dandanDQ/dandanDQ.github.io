@@ -1,4 +1,5 @@
-
+import Image from 'next/image';
+import "./RelevantCard.scss"
 export default function RelevantCard({
     title = '国风精致温馨房',
     rateStar = '4.98',
@@ -7,14 +8,22 @@ export default function RelevantCard({
     price = '￥998/晚',
   }) {
     return (
-      <div className="relvant-card">
+      <div className="relevant-card">
         <div className="card-img">
           <img
+            className='main-img'
             src="/background/bg2.jpg"
             alt=""
           />
           <div className="card-img-controller-wrapper">
-            <div className="controller-button like-button">❤️</div>
+            <Image
+                className="img"
+                src='/like.svg'
+                width={16}
+                height={16}
+                alt="Picture of the author"
+                priority
+                />
           </div>
         </div>
         <div className="card-info">

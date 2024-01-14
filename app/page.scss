@@ -1,0 +1,93 @@
+/* 
+100vw = 750px
+1vw = 7.5px
+
+0.533 = 4
+1.067 = 8
+1.6 = 12
+2.133 = 16
+2.667 = 20
+3.2 = 24
+3.73 = 28
+4.267 = 32
+4.8 = 36
+5.33 = 40
+
+*/
+
+h3 {
+    font-size: 4.267vw;
+    margin-top: 1.6vw;
+  }
+  
+  .home-container {
+    width: 100vw;
+    font-size: 2.133vw;
+    overflow: auto;
+    height: 100vh;
+    border-radius: 8vw; 
+    border: 1px solid rgb(206, 206, 206);
+    background-color: rgb;
+    padding-bottom: 20vw;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .nav-bar {
+        position: fixed;
+        bottom: 3vw;
+        left: 3vw;
+        right: 3vw;
+    }
+
+      
+    .body-container {
+      margin: 6vw;
+      .card-container {
+        overflow-x: auto;
+        font-size: 3.73vw;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      
+      .card-container > div {
+        margin-right: 2.133vw;
+      }
+      
+      .card-img {
+        position: relative;
+        border-radius: 1.6vw;
+        overflow: hidden;
+      }
+    
+      .controller-button {
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 5.13vw;
+        height: 5.13vw;
+        padding: 0 0.6vw;
+      }
+      
+      .card-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+      }
+      
+      .discovery-card {
+        flex: 0 0 auto;
+        width: 40vw;
+        height: 20vw;
+        border-radius: 1.6vw;
+        overflow: hidden;
+      }
+    }
+  }
+
+  
+  
