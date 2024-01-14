@@ -1,10 +1,13 @@
 .navbar-component {
     background-color: rgba(21, 21, 16, 0.8);
     backdrop-filter: blur();
-    border-radius: 38px;
+    border-radius: 9vw;
     display: flex;
     align-items: center;
-    height: 76px;
+    justify-content: space-between;
+    padding: 0 10vw;
+    height: 18vw;
+
     .item {
         .img {
             margin-bottom: 6px;
