@@ -1,9 +1,14 @@
 .nav-button {
     .img {
-        margin-bottom: 6px;
+        margin-bottom: 6px;   
     }
+
     .title {
         color: #ffffff;
         font-size: 3.4vw;
     }
+}
+
+.disabled {
+    filter: opacity(50%);
 }

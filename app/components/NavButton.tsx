@@ -3,11 +3,13 @@ import Image from 'next/image'
 
 interface NavButtonProps {
     name: string,
-    icon: string
+    icon: string,
+    disabled?: boolean
 }
-export default function NavButton({name, icon}: NavButtonProps) {
+export default function NavButton({name, icon, disabled}: NavButtonProps) {
+const className = `nav-button ${disabled ? 'disabled': ''}`;
   return (
-    <div className="nav-button">
+    <div className={className}>
         <Image
         className="img"
         src={icon}
