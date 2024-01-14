@@ -1,6 +1,12 @@
 .nav-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .img {
-        margin-bottom: 6px;   
+        margin-bottom: 6px;
+        width: 5.5vw;
+        height: 5.5vw;
     }
 
     .title {

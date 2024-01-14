@@ -10,14 +10,11 @@ export default function NavButton({name, icon, disabled}: NavButtonProps) {
 const className = `nav-button ${disabled ? 'disabled': ''}`;
   return (
     <div className={className}>
-        <Image
+      <img
         className="img"
         src={icon}
-        width={24}
-        height={24}
-        alt="Picture of the author"
-        priority
-        />
+      >
+      </img>
         <div className="title">{name}</div>
     </div>
   );
