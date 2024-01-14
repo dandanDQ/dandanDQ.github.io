@@ -1,0 +1,17 @@
+.navbar-component {
+    background-color: rgba(21, 21, 16, 0.8);
+    backdrop-filter: blur();
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    height: 76px;
+    .item {
+        .img {
+            margin-bottom: 6px;
+        }
+        .title {
+            color: #ffffff;
+            font-size: 14px;
+        }
+    }
+}
