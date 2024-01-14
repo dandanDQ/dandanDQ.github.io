@@ -1,12 +1,17 @@
+@font-face {
+    font-family: "Slogan font";
+    src: url("/fonts/douyuFont-2.otf");
+}
+
 .header-background {
     width: 100vw;
     color: #fff;
-    border-radius: 8vw; 
+    border-radius: 9vw;
     height: 52w;
     padding: 5vw;
     position: relative;
     overflow: hidden;
-    
+
     &::before {
         content: "";
         position: absolute;
@@ -21,31 +26,55 @@
         filter: brightness(0.5);
     }
 
-    .header-container {
-        position: relative;
-        .top-nav {
-            margin-top: 5vw;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .slogan {
-          font-size: 4.8vw;
-          margin-top: 6vw;
-          color: #fff;
-        }
-    
-       .input-area  {
-            margin-top: 4vw;
-        }
-        .location {
-            display: flex;
-            align-items: center;
-            font-size: 2.8vw;
-            .img {
-                margin-right: 1.3vw;
-            }
-        }
+    .icon {
+        width: 5vw;
+        height: 5vw;
     }
 
-  }
+
+    .header-container {
+        position: relative;
+
+        .top-nav {
+            padding-top: 5vw;
+            display: flex;
+            justify-content: space-between;
+
+
+            .location {
+                display: flex;
+                align-items: center;
+                font-size: 3.2vw;
+                letter-spacing: 0.3vw;
+
+                .icon {
+                    margin-right: 1.3vw;
+                }
+            }
+
+            .menu {
+                border-radius: 5vw;
+                background-color: rgba(255, 255, 255, 0.4);
+                padding: 0.8vw;
+                width: 18vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+
+        .slogan {
+            font-size: 5vw;
+            letter-spacing: 0.5vw;
+            margin-top: 6vw;
+            color: #fff;
+            font-family: "Slogan font";
+        }
+
+        .input-area {
+            margin-top: 4vw;
+        }
+
+    }
+
+}

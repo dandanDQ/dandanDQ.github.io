@@ -4,21 +4,29 @@
     backdrop-filter: blur(1vw);
     border-radius: 12vw;
     display: flex;
+    align-items: center;
     padding: 2vw 4vw;
+
     .input {
-        height: 12vw;
+        height: 10vw;
         flex: 1 1 0;
         background: transparent;
-        outline:  none;
+        outline: none;
         color: #fff;
-        font-size: 3.2vw;
+        font-size: 3.5vw;
+        letter-spacing: 0.3vw;
+
         &::placeholder {
             color: #fff;
-            font-size: 3.2vw;
+            font-size: 3.5vw;
+            letter-spacing: 0.3vw;
         }
     }
+
     .img {
         flex: 0 0 1;
         margin-right: 2vw;
+        height: 5vw;
+        width: 5vw;
     }
 }

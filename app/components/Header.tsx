@@ -8,24 +8,25 @@ export default function Header() {
             <div className='header-container'>
                 <div className="top-nav">
                     <div className="location">
-                        <Image
-                            className="img"
-                            src='/location.svg'
-                            width={18}
-                            height={18}
-                            alt="Picture of the author"
-                            priority
-                            />
+                        <img
+                            className="icon"
+                            src="/location.svg" alt="" />
                         党演灯塔营地
                     </div>
-                    <div className="avatar">头像</div>
+                    <div className="menu">
+                        <img
+                            className="icon"
+                            src="/more.svg" alt="" />
+                        <img
+                            className="icon"
+                            src="/back.svg" alt="" />
+                    </div>
                 </div>
-                <div className="slogan">Hey, Martin! Tell us where you want to go.</div>
+                <div className="slogan">嘟嘟房车          ，创造美好生活！</div>
                 <div className='input-area'>
-                    <Input placeholder='嘟嘟二号营地'/>
+                    <Input placeholder='嘟嘟党演营地' />
                 </div>
             </div>
         </div>
     );
-  }
-  
+}
