@@ -1,4 +1,4 @@
-import "./navbar.scss"
+import "./NavBar.scss"
 import NavButton  from "./NavButton";
 
 export default function Navbar() {
