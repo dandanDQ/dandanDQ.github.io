@@ -26,7 +26,7 @@ export default function RelevantCard({
         <div className="card-title">
           <div className="title-text">{title}</div>
           <div className="rate">
-            ⭐️ {rateStar}({rateCount})
+            <img src="/star.svg" className="icon" alt="" /> {rateStar}({rateCount})
           </div>
         </div>
         <div className="card-desc">{desc}</div>

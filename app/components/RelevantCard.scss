@@ -5,6 +5,11 @@
     background-color: #fff;
     border-radius: 8vw;
 
+    .icon {
+      width: 5vw;
+      height: 5vw;
+    }
+
     .card-img {
       position: relative;
       border-radius: 1.6vw;
@@ -27,12 +32,6 @@
         display: flex;
         justify-items: center;
         justify-content: center;
-
-        .icon {
-          width: 5vw;
-          height: 5vw;
-        }
-
       }
     }
 
@@ -43,6 +42,11 @@
         display: flex;
         justify-content: space-between;
         font-weight: bold;
+
+        .rate {
+          display: flex;
+          gap: 0.5vw
+        }
       }
     }
   }
