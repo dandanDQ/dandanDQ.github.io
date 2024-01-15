@@ -1,13 +1,16 @@
-
-export default function DiscoveryCard() {
-    return (
-      <div className="discovery-card">
-        <div className="img">
-          <img
-            src="/background/bg2.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    );
+import "./DiscoveryCard.scss"
+export default function DiscoveryCard(
+  {
+    img = "/background/bg2.jpg"
   }
+) {
+  return (
+    <div className="discovery-card">
+      <img
+        className="img"
+        src={img}
+        alt=""
+      />
+    </div>
+  );
+}

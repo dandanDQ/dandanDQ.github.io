@@ -7,8 +7,8 @@
     width: 100vw;
     color: #fff;
     border-radius: 9vw;
-    height: 52w;
-    padding: 5vw;
+    height: 70vw;
+    padding: 7vw;
     position: relative;
     overflow: hidden;
 
@@ -34,9 +34,13 @@
 
     .header-container {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
 
         .top-nav {
-            // padding-top: 5vw;
+            padding-top: 8vw;
             display: flex;
             justify-content: space-between;
 
@@ -66,13 +70,9 @@
         .slogan {
             font-size: 5vw;
             letter-spacing: 0.5vw;
-            margin-top: 6vw;
+            margin: 6vw 0;
             color: #fff;
             font-family: "Slogan font";
-        }
-
-        .input-area {
-            margin-top: 4vw;
         }
 
     }

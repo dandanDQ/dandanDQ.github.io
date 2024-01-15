@@ -1,0 +1,13 @@
+.discovery-card {
+  flex: 0 0 auto;
+  width: 40vw;
+  height: 30vw;
+  border-radius: 8vw;
+  overflow: hidden;
+
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
