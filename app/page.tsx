@@ -60,6 +60,7 @@ export default function Home() {
           <div className="list">
             {relevantList.map((item) => {
               return <RelevantCard
+                key={item.title}
                 title={item.title}
                 price={item.price}
                 desc={item.desc}
@@ -73,7 +74,7 @@ export default function Home() {
           <h3 className='title'>嘟嘟房车</h3>
           <div className="list">
             {carList.map((item) => {
-              return <DiscoveryCard img={item.img} />
+              return <DiscoveryCard key={item.img} img={item.img} />
             })}
           </div>
         </div>

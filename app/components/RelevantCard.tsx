@@ -33,7 +33,7 @@ export default function RelevantCard({
         </div>
         <div className="tags">
           {tags.map(tag => {
-            return <div className="tag">{tag}</div>
+            return <div className="tag" key={tag}>{tag}</div>
           })}
         </div>
         <div className="price">{price}</div>
