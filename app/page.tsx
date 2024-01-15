@@ -43,7 +43,7 @@ export default function Home() {
   const carList = [{
     img: '/car/car1.jpg'
   }, {
-    img: '/camp/2.jpg'
+    img: '/camp/4.jpg'
   },
   {
     img: '/car/car1.jpg'
