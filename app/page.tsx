@@ -9,35 +9,30 @@ export default function Home() {
     {
       title: '星空度假露营地',
       rateStar: '4.99',
-      rateCount: '116',
+      rateCount: '999',
       desc: '独立卫浴 独立露台',
       price: '￥1899/晚',
-      img: '/camp/2.jpg'
+      img: '/camp/2.jpg',
+      tags: ["星空酒吧", "野趣帐篷", "营地餐吧"]
     },
     {
-      title: '临海星空屋',
+      title: '灯塔度假营地',
       rateStar: '4.98',
-      rateCount: '999',
+      rateCount: '1040',
       desc: '可做饭',
       price: '￥2688/晚',
-      img: '/camp/5.png'
+      img: '/camp/5.png',
+      tags: ["备课蓬屋", "贝壳蓬屋", "营地商店"]
     },
     {
-      title: '野奢帐篷酒店',
+      title: '野奢度假营地',
       rateStar: '5.00',
-      rateCount: '888',
+      rateCount: '998',
       desc: '独立卫浴 独立露台',
       price: '￥1899/晚',
-      img: '/camp/1.png'
+      img: '/camp/1.png',
+      tags: ["最美海岸线", "沙滩海岸", "星空露营"]
     },
-    {
-      title: '自带沙滩帐篷',
-      rateStar: '4.98',
-      rateCount: '100',
-      desc: '独立卫浴 可做饭',
-      price: '￥1899/晚',
-      img: '/camp/3.jpg'
-    }
   ];
 
   const carList = [{
