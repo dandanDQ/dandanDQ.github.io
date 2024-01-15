@@ -7,8 +7,8 @@ import DiscoveryCard from './components/DiscoveryCard';
 export default function Home() {
   const relevantList = [
     {
-      title: '花园星空屋',
-      rateStar: '5',
+      title: '星空度假露营地',
+      rateStar: '4.99',
       rateCount: '116',
       desc: '独立卫浴 独立露台',
       price: '￥1899/晚',
@@ -16,7 +16,7 @@ export default function Home() {
     },
     {
       title: '临海星空屋',
-      rateStar: '4.9',
+      rateStar: '4.98',
       rateCount: '999',
       desc: '可做饭',
       price: '￥2688/晚',
@@ -24,7 +24,7 @@ export default function Home() {
     },
     {
       title: '野奢帐篷酒店',
-      rateStar: '5',
+      rateStar: '5.00',
       rateCount: '888',
       desc: '独立卫浴 独立露台',
       price: '￥1899/晚',
@@ -32,7 +32,7 @@ export default function Home() {
     },
     {
       title: '自带沙滩帐篷',
-      rateStar: '5',
+      rateStar: '4.98',
       rateCount: '100',
       desc: '独立卫浴 可做饭',
       price: '￥1899/晚',
