@@ -1,5 +1,4 @@
 import "./NavButton.scss"
-import Image from 'next/image'
 
 interface NavButtonProps {
     name: string,

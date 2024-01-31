@@ -3,7 +3,7 @@ import Navbar from './components/NavBar';
 import Header from './components/Header';
 import RelevantCard from './components/RelevantCard';
 import DiscoveryCard from './components/DiscoveryCard';
-
+import BusinessCard from './components/BusinessCard';
 export default function Home() {
   const relevantList = [
     {
@@ -50,11 +50,36 @@ export default function Home() {
   }, {
     img: '/camp/2.jpg'
   }]
+
+  const businessList = [{
+    name: "野奢度假",
+    icon: "/business/camp.png"
+  },{
+    name: "房车租售",
+    icon: "/business/rv.png"
+  },{
+    name: "购物商城",
+    icon: "/business/shop.png"
+  },{
+    name: "会员礼遇",
+    icon: "/business/dudu.png"
+  }]
   return (
     <div className="home-container">
       <Header />
 
       <div className="main">
+        <div className="container">
+          <div className="business-list">
+            {businessList.map((item) => {
+              return <BusinessCard
+                key={item.name}
+                name={item.name}
+                icon={item.icon}
+              ></BusinessCard>
+            })}
+          </div>
+        </div>
         <div className="container">
           <h3 className='title'>营地推荐</h3>
           <div className="list">
