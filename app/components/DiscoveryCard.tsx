@@ -1,7 +1,7 @@
 import "./DiscoveryCard.scss"
 export default function DiscoveryCard(
   {
-    img = "/background/bg2.jpg"
+    img = ""
   }
 ) {
   return (
