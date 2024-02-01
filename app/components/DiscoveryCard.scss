@@ -1,13 +1,50 @@
 .discovery-card {
   flex: 0 0 auto;
-  width: 40vw;
-  height: 30vw;
+  width: 45vw;
+  height:45vw;
   border-radius: 8vw;
   overflow: hidden;
-
+  position: relative;
+  background-color: #fff;
   .img {
-    height: 100%;
     width: 100%;
+    height: 30vw;
     object-fit: cover;
+  }
+
+  .card-img-controller-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 1.4vw;
+    position: absolute;
+    top: 3.2vw;
+    right: 3.2vw;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .discovery-mask {
+    height: 15vw;
+    border-radius: 3vw;
+    background-color: #fff;
+    // top: 0;
+    // background: radial-gradient(transparent 50%, rgb(24, 37, 111));;
+    // backdrop-filter: blur(2vw);
+    // background-color: rgba(14, 14, 14, 1);
+    color: black;
+    padding: 2vw 2vw 4vw 2vw;
+    .main-info {
+      font-size: 3.5vw;
+      font-weight: 600;
+    }
+    .description {
+      font-size: 2.5vw;
+    }
   }
 }
