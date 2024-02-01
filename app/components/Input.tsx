@@ -1,6 +1,5 @@
 
 import "./Input.scss"
-import Image from "next/image"
 
 interface InputProps {
   placeholder: string
