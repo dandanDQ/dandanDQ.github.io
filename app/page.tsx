@@ -53,16 +53,20 @@ export default function Home() {
 
   const businessList = [{
     name: "野奢度假",
-    icon: "/business/camp.png"
+    icon: "/business/camp.png",
+    width: 80
   },{
     name: "房车租售",
-    icon: "/business/rv.png"
+    icon: "/business/rv.png",
+    width: 80
   },{
     name: "购物商城",
-    icon: "/business/shop.png"
+    icon: "/business/store.png",
+    width: 70
   },{
     name: "会员礼遇",
-    icon: "/business/dudu.png"
+    icon: "/business/dudu.png",
+    width: 70
   }]
   return (
     <div className="home-container">
@@ -76,6 +80,7 @@ export default function Home() {
                 key={item.name}
                 name={item.name}
                 icon={item.icon}
+                width={item.width}
               ></BusinessCard>
             })}
           </div>
