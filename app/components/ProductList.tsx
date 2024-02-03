@@ -60,7 +60,6 @@ export default function ProductList() {
             <img
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               src={`${item.img}?w=162&auto=format`}
-              alt={item.title}
               loading="lazy"
               style={{
                 borderBottomLeftRadius: 4,
