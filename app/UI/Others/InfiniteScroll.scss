@@ -1,0 +1,8 @@
+.ui-infinite-scroll {
+  border: 1px solid orange;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1vw 6vw;
+  grid-gap: 4vw;
+  grid-auto-flow: row dense;
+}
