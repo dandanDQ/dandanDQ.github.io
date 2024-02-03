@@ -1,13 +1,11 @@
 "use client"
-import { useState } from 'react';
 import './page.scss';
 import Navbar from './components/NavBar';
 import Header from './components/Header';
 import RelevantCard from './components/RelevantCard';
 import DiscoveryCard from './components/DiscoveryCard';
 import BusinessCard from './components/BusinessCard';
-import InfiniteScroll  from './UI/Others/InfiniteScroll';
-import Card from "./UI/Others/GridCard";
+import ProductList from './components/ProductList';
 
 export default function Home() {
   const relevantList = [
@@ -74,43 +72,7 @@ export default function Home() {
     width: 70
   }]
 
-  const [productList, setProductList] = useState([{
-    url: "xxxx",
-    img: '/product/4.jpg',
-  },
-  {
-    url: "",
-    img: '/product/2.jpg',
-  },
-  {
-    url: "",
-    img: '/product/5.png',
-  },
-  {
-    url: "xxxx",
-    img: '/product/4.jpg',
-  },
-  {
-    url: "",
-    img: '/product/4.jpg',
-  },
-  {
-    url: "xxxx",
-    img: '/product/3.jpg',
-  },
-  {
-    url: "",
-    img: '/product/1.jpg',
-  }
-]);
 
-  const addProductItem = () => {
-    const newItem = {
-      url: "",
-      img: '/product/1.jpg',
-    };
-    setProductList(prevItems => [...prevItems, newItem])
-  }
   return (
     <div className="home-container">
       <Header />
@@ -154,12 +116,7 @@ export default function Home() {
 
         <div className="container">
           <h3 className='title'>商城精选</h3>
-          <button onClick={addProductItem}>获取更多</button>
-          <InfiniteScroll>
-            {productList.map((item) => {
-              return <Card key={item.img} img={item.img} />
-            })}
-          </InfiniteScroll>
+          <ProductList />
         </div>
       </div>
 
